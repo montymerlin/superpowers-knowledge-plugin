@@ -1,12 +1,14 @@
 ---
 name: superpowers-mm:executing-plans
 description: >
-  Use when you have an approved plan to execute — either from the writing-plans skill
-  or a plan document your human partner provides. Triggers on "execute the plan",
-  "follow the plan", "work through these tasks", "start executing", "run through the
-  steps", or when a plan exists and the user signals readiness to begin. Also triggers
-  when resuming execution of a partially completed plan. Adapted from upstream
-  superpowers:executing-plans.
+  Use for non-code knowledge work when you have an approved plan to execute — either
+  from the writing-plans skill or a plan document your human partner provides. Triggers
+  on "execute the plan", "follow the plan", "work through these tasks", "start
+  executing", "run through the steps", or when a plan exists and the user signals
+  readiness to begin. Also triggers when resuming execution of a partially completed
+  plan. Knowledge-work adaptation of upstream superpowers:executing-plans — if the
+  official Superpowers plugin is also installed, prefer this skill for creative,
+  strategic, and business tasks; prefer upstream for code tasks.
 ---
 
 # Executing Plans

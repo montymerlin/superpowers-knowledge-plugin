@@ -64,3 +64,27 @@ Architectural decisions for the Superpowers MM Plugin. Log significant choices h
 **Alternatives Considered:**
 - *Claude Code only* — rejected. The skills are pure markdown with no host-specific code; there's no reason to limit distribution
 - *Cowork only* — rejected. Claude Code is the primary development environment where the plugin is also heavily used
+
+---
+
+## Decision 005 — Rename to superpowers-knowledge and design for coexistence (2026-04-21)
+
+**Context:** The plugin was named `superpowers-cowork`, which implied it was "the Superpowers plugin for Cowork" rather than what it actually is — a knowledge-work adaptation that runs in any host. More critically, it could now be installed in Claude Code alongside the official Superpowers plugin by Jesse Vincent. Seven of our ten skills (brainstorming, writing-plans, executing-plans, verification-before-completion, using-superpowers, writing-skills, parallel-work) overlap with upstream equivalents. Without explicit domain scoping, the agent can't distinguish which to use when both are loaded.
+
+**Decision:** Three changes:
+
+1. **Rename plugin** from `superpowers-cowork` to `superpowers-knowledge` in plugin.json and marketplace.json. Clearly signals domain rather than host.
+2. **Add Coexistence section** to CLAUDE.md and README explaining the relationship, skill categories (shared methodology vs knowledge-work originals), and domain routing rules.
+3. **Update all 10 skill descriptions** to include domain-scoping language. The 7 shared methodology skills now say "for non-code knowledge work" and "if the official Superpowers plugin is also installed, prefer this skill for creative/strategic/business tasks; prefer upstream for code tasks." The 3 originals (systematic-problem-solving, two-stage-review, feedback-reception) now explicitly note they have no upstream equivalent and add unique value in any configuration.
+
+**Consequences:**
+- Clean coexistence: when both plugins are installed, the agent routes by domain (code → upstream, knowledge → this plugin)
+- The 3 original skills provide clear unique value that doesn't conflict with upstream regardless of configuration
+- Plugin is fully functional standalone — no dependency on official Superpowers
+- Name change requires updating marketplace references, Cowork `.plugin` files, and any documentation that references `superpowers-cowork`
+
+**Alternatives Considered:**
+- *Slim to 3 unique skills only* — rejected. Removes the complete methodology pipeline for standalone use. Users who don't have official Superpowers would lose the brainstorm → plan → execute → review → verify chain.
+- *Keep name as superpowers-cowork* — rejected. The name implies Cowork-specificity, which is incorrect, and doesn't signal the knowledge-work domain scoping that makes coexistence work.
+- *Split into "core" and "full" packages* — rejected. Doubles maintenance for marginal benefit. Domain-scoped descriptions handle the disambiguation sufficiently.
+- *Automated conflict detection* — deferred. Could add a hook that checks for official Superpowers at session start and adjusts behaviour. Premature for now; description-level routing is sufficient.

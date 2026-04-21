@@ -11,6 +11,8 @@ This is a **deliberate fork**, not a mirror. The core methodology (Iron Laws, ve
 
 We selectively adopt upstream improvements that apply to both domains, while maintaining our own domain-specific skills.
 
+**Coexistence:** This plugin can be installed alongside the official Superpowers plugin. All skill descriptions include domain-scoping language so the agent routes by context: code tasks → upstream skills, knowledge tasks → this plugin's `superpowers-mm:` namespaced skills. Three original skills (systematic-problem-solving, two-stage-review, feedback-reception) have no upstream equivalent and add unique value in any configuration. See Decision 005.
+
 ## Sync Status
 
 | Date | Upstream Version | Plugin Version | What Changed |

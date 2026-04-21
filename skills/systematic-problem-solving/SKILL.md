@@ -11,6 +11,9 @@ description: >
   time pressure, when "just one quick fix" seems obvious, when multiple attempts have
   already failed, or when the root cause is unclear. If there is even a 1% chance the
   user is dealing with a problem rather than a creation task, invoke this skill.
+  Original knowledge-work skill — no upstream Superpowers equivalent. Applies 4-phase
+  root cause analysis to business, operational, and strategic problems (not code bugs).
+  Adds unique value even when the official Superpowers plugin is also installed.
 ---
 
 # Systematic Problem-Solving

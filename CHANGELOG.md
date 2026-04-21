@@ -4,6 +4,18 @@ Narrative history of significant changes to the Superpowers MM Plugin. Each entr
 
 ---
 
+## 2026-04-21 — v0.4.0: Rename to superpowers-knowledge, coexistence with official Superpowers
+
+Renamed the plugin from `superpowers-cowork` to `superpowers-knowledge` — the old name implied Cowork-specificity, but the plugin runs in any host. The new name signals the knowledge-work domain that makes it complementary to (not competing with) the official Superpowers plugin.
+
+Added a Coexistence section to CLAUDE.md and README explaining how the plugin works alongside Jesse Vincent's Superpowers. The design: 7 shared methodology skills (brainstorming, writing-plans, etc.) are domain-scoped via their descriptions so the agent routes by context — code tasks go to upstream, knowledge tasks to this plugin. 3 original skills (systematic-problem-solving, two-stage-review, feedback-reception) have no upstream equivalent and add unique value in any configuration.
+
+Updated all 10 skill SKILL.md descriptions to include explicit domain-scoping language. The 7 shared skills now say "for non-code knowledge work" and reference the upstream coexistence pattern. The 3 originals now explicitly note they have no upstream equivalent.
+
+Also renamed README from "Superpowers for Cowork" to "Superpowers for Knowledge Work". See Decision 005.
+
+---
+
 ## 2026-04-21 — v0.3.3: Authorship attribution update
 
 Corrected the authorship record across README.md, CLAUDE.md, and plugin.json to properly reflect the fork's lineage. Rollo Bryant is credited as the original fork author (v0.1.0), having adapted Jesse Vincent's Superpowers framework for knowledge work. Monty Bryant is listed as the current maintainer (v0.2.0 onwards). The previous README listed only Rollo under "Author", which omitted the handoff entirely.

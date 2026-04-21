@@ -9,7 +9,10 @@ description: >
   Also triggers when the user shares negative reactions to their work, or when implementing
   changes based on someone else's input. If there is even a 1% chance you are processing
   external feedback, invoke this skill. This prevents performative agreement and ensures
-  feedback is evaluated technically before acting on it.
+  feedback is evaluated technically before acting on it. Original knowledge-work
+  skill — adapted from upstream receiving-code-review but significantly different
+  (evaluates client/stakeholder feedback, not code review). Adds unique value even
+  when the official Superpowers plugin is also installed.
 ---
 
 # Feedback Reception

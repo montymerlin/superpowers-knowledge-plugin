@@ -2,7 +2,15 @@
 
 This plugin is a **deliberate fork** of [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent. Upstream targets software development; this fork targets creative, strategic, and business knowledge work.
 
-Load this file when a user asks about the plugin's origins, wants to add a new skill, or asks how this relates to the "real" Superpowers.
+Load this file when a user asks about the plugin's origins, wants to add a new skill, asks how this relates to the "real" Superpowers, or when both this plugin and the official Superpowers are installed and domain routing is needed.
+
+## Coexistence with Official Superpowers
+
+This plugin can be installed alongside the official Superpowers plugin. When both are loaded:
+
+- **Domain routing:** Code tasks (writing, debugging, testing, git) → official Superpowers skills. Knowledge tasks (proposals, strategy, research, creative, business) → this plugin's `superpowers-mm:` skills.
+- **3 original skills always add value:** systematic-problem-solving, two-stage-review, and feedback-reception have no upstream equivalent.
+- **7 shared methodology skills are domain-scoped:** Their descriptions explicitly say "for non-code knowledge work" so the agent can disambiguate.
 
 ## Fork Rationale
 
