@@ -170,3 +170,4 @@ These phrases are fine because they include or imply evidence:
 - After **writing-plans** execution: verify each task's completion before marking done
 - After **two-stage-review**: verification confirms review findings were addressed
 - Before ANY handoff to your human partner: mandatory verification gate
+- **If `agentic-scaffold:repo-audit` is installed** and the session touched any scaffold artifacts (CHANGELOG, DECISIONS, ROADMAP, version files): run it as a final check before declaring the session complete. It catches stale changelogs, version drift, and ROADMAP/DECISIONS gaps that are easy to miss when focused on content work.
