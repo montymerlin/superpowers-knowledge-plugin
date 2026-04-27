@@ -1,5 +1,5 @@
 ---
-name: superpowers-knowledge:two-stage-review
+name: two-stage-review
 description: >
   This skill should be used when reviewing any deliverable before handoff - emails,
   proposals, content, strategy documents, presentations, research, or any work product.

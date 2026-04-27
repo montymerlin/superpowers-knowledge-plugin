@@ -40,29 +40,14 @@ The skills are already domain-scoped so the host can route by context. Three ski
 
 ## Installation
 
-### Claude Code CLI
+See [SETUP.md](SETUP.md) for complete installation instructions across all hosts.
 
-```bash
-claude plugins install github.com/montymerlin/superpowers-knowledge-plugin
-```
+**TL;DR:**
 
-### Claude Desktop (Cowork)
-
-Install from the marketplace or package the repo for upload:
-
-```bash
-zip -r superpowers-knowledge.plugin . -x ".git/*" ".DS_Store"
-```
-
-### Codex
-
-```bash
-bash scripts/install_codex_skills.sh --from-github
-```
-
-### Other Hosts
-
-Clone the repo and load the skill folders according to the host's skill/plugin conventions.
+- **Cowork:** Get a `.plugin` zip (from GitHub Releases, or by running `zip -r /tmp/superpowers-knowledge.plugin . -x ".git/*" "*.DS_Store"` in this repo) and upload via Claude Desktop → Plugins.
+- **Claude Code CLI:** `claude plugins install github.com/montymerlin/superpowers-knowledge-plugin` (global) or symlink for project-scoped install.
+- **Codex:** `bash scripts/install_codex_skills.sh --from-github`
+- **Cursor / VS Code / other hosts:** Copy `skills/*/SKILL.md` to your local skills folder.
 
 ## Upstream Tracking
 

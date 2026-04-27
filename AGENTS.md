@@ -32,12 +32,23 @@ superpowers-knowledge-plugin/
 │   └── update_codex_skills.sh
 ├── AGENTS.md                # Canonical repo instructions
 ├── CLAUDE.md                # Claude compatibility wrapper
+├── SETUP.md                 # Canonical install + compatibility reference (all hosts)
 ├── CHANGELOG.md
 ├── DECISIONS.md
 ├── ROADMAP.md
 ├── README.md
-└── UPSTREAM.md
+├── UPSTREAM.md
+└── .gitignore
 ```
+
+## Packaging for Cowork
+
+Cowork install is via a `.plugin` zip uploaded through Claude Desktop. Two paths:
+
+1. **Use the `cowork-plugin-packager` skill** in the montymerlinHQ workspace — runs validation, packaging, and verification. Produces `superpowers-knowledge-<version>.plugin` in `ops/plugins/_dist/`.
+2. **Build by hand** — see `SETUP.md` § "Cowork (Claude Desktop)" for the raw `zip` command and verification steps. Use this when working outside montymerlinHQ.
+
+`SETUP.md` is the single source of truth for install pathways across Cowork, Claude Code CLI, Codex, Cursor/VS Code, and Agent SDK — read it before changing install or packaging behavior.
 
 ## Canonical Rules
 

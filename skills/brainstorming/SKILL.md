@@ -1,5 +1,5 @@
 ---
-name: superpowers-knowledge:brainstorming
+name: brainstorming
 description: >
   This skill should be used for non-code knowledge work when the user asks to
   "brainstorm", "explore ideas", "think through", "design a solution", "figure out

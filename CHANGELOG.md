@@ -4,6 +4,16 @@ Narrative history of significant changes to the Superpowers MM Plugin. Each entr
 
 ---
 
+## 2026-04-27 — Plugin audit pass + skill name fix
+
+Audited the plugin against `/create-cowork-plugin` standards. Fixed the namespaced skill `name:` frontmatter bug across all 10 SKILL.md files (e.g. `superpowers-knowledge:brainstorming` → `brainstorming`). The host prepends the plugin name at runtime, so manual namespacing in `name:` causes doubled IDs.
+
+Also added: `.gitignore` (was missing), `SETUP.md` § "Quick Install (for AI agents)" decision tree, Cowork 3-option packaging pattern, and global-vs-local Claude Code install split. AGENTS.md Canonical Structure was updated to include SETUP.md and `.gitignore`. Compatibility matrix corrected: Cursor/VS Code moved from ✓ to "partial" — they don't load plugin manifests, only raw skill files. README.md TL;DR Cowork line reframed to not assume `ops/plugins/_dist/` path (external users build their own zip).
+
+## 2026-04-27 — Cowork packaging: SETUP.md as setup canon
+
+Added `SETUP.md` as the single source of truth for install pathways and host compatibility. Notes the no-runtime-dependencies story (markdown skills only, no MCP) which makes this plugin a clean fit for sandboxed hosts including Cowork. `README.md`'s install section was trimmed to a pointer; UPSTREAM.md is left untouched as the fork-provenance record. The plugin is now packaged as `superpowers-knowledge-0.5.0.plugin` in `ops/plugins/_dist/` using the new `cowork-plugin-packager` skill.
+
 ## 2026-04-22 — v0.5.0: AGENTS.md canon and Codex install support
 
 Shifted the repo to the same compatibility-layer model now used across the plugin portfolio. `AGENTS.md` is now the canonical repo instruction file, `CLAUDE.md` is a thin wrapper, and the one runtime reference used by the meta-skill now resolves through a portable root variable instead of assuming a Claude-only plugin host.

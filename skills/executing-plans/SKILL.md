@@ -1,5 +1,5 @@
 ---
-name: superpowers-knowledge:executing-plans
+name: executing-plans
 description: >
   Use for non-code knowledge work when you have an approved plan to execute — either
   from the writing-plans skill or a plan document your human partner provides. Triggers

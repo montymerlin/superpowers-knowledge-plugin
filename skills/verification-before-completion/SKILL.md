@@ -1,5 +1,5 @@
 ---
-name: superpowers-knowledge:verification-before-completion
+name: verification-before-completion
 description: >
   This skill should be used for non-code knowledge work when about to claim any work
   is "done", "complete", "finished", "ready", "sent", "submitted", or "good to go".
