@@ -1,5 +1,7 @@
 # Upstream Tracking
 
+> **Retired 2026-11-09.** This fork is no longer synced. Use [Superpowers](https://github.com/obra/superpowers) directly.
+
 This plugin is an adaptation of [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent, adapted for non-code knowledge work (creative, strategic, business workflows) by Rollo Bryant.
 
 ## Relationship to Upstream
@@ -19,6 +21,7 @@ We selectively adopt upstream improvements that apply to both domains, while mai
 |------|-----------------|----------------|--------------|
 | 2026-04-03 | ~v5.0.x | v0.1.0 | Initial adaptation by Rollo Bryant |
 | 2026-04-08 | v5.0.7 | v0.2.0 | Ported CSO methodology, bulletproofing framework, skill-type testing patterns to writing-skills. Added scope-decomposition and spec-saving to brainstorming. Tightened rationalization prevention in verification-before-completion. Added rigid/flexible skill typing to using-superpowers. New skills: parallel-work (from dispatching-parallel-agents), executing-plans. |
+| 2026-11-09 | v7.0.2 | v0.6.0 | Retired. Upstream now covers knowledge work; use it directly (Decision 007). |
 
 ## Skill Mapping
 

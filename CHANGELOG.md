@@ -4,6 +4,10 @@ Narrative history of significant changes to the Superpowers MM Plugin. Each entr
 
 ---
 
+## 2026-11-09 — v0.6.0: Retired in favour of upstream Superpowers
+
+The plugin is retired. Upstream [Superpowers](https://github.com/obra/superpowers) now covers knowledge work directly (its brainstorming skill applies "in software or out of it"), and has been rebuilt twice since this fork was taken from v5.0.7 in April. The README now says so and points to upstream; the manifests are bumped to 0.6.0 with a "Retired" description so an auto-updating install surfaces the change. The skills are left as they were, as a record. See Decision 007.
+
 ## 2026-04-27 — Plugin audit pass + skill name fix
 
 Audited the plugin against `/create-cowork-plugin` standards. Fixed the namespaced skill `name:` frontmatter bug across all 10 SKILL.md files (e.g. `superpowers-knowledge:brainstorming` → `brainstorming`). The host prepends the plugin name at runtime, so manual namespacing in `name:` causes doubled IDs.

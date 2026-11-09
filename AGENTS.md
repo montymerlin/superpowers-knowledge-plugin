@@ -6,7 +6,8 @@ Canonical repo instructions for `superpowers-knowledge-plugin`.
 
 - **Name:** superpowers-knowledge
 - **Type:** Host-agnostic methodology skills repo with Claude plugin packaging compatibility
-- **Version:** 0.5.0
+- **Version:** 0.6.0
+- **Status:** Retired 2026-11-09 (Decision 007). Do not add features; changes are limited to keeping the retirement notice accurate.
 - **Stack:** Markdown skills + upstream-tracking docs + lightweight install scripts
 
 ## Canonical Structure

@@ -107,3 +107,20 @@ Architectural decisions for the Superpowers MM Plugin. Log significant choices h
 - *Leave the repo Claude-first* — would keep the portfolio conventions inconsistent
 - *Remove CLAUDE.md entirely* — too abrupt; wrapper compatibility is cleaner
 - *Vendor-copy the skills for Codex only* — unnecessary duplication when the repo itself can stay canonical
+
+## Decision 007 — Retire the plugin in favour of upstream Superpowers (2026-11-09)
+
+**Context:** The fork existed because upstream Superpowers was written for software development. By November 2026 that had changed: upstream's brainstorming skill describes itself as applying to "planning anything new, in software or out of it (a talk, a business, a renovation)", and upstream had shipped v7.0.0 to v7.0.2 with two rebuilds of brainstorming. This fork had not synced since v5.0.7 (April). With both installed, sessions split brainstorming between the two roughly evenly (31 fork calls against 48 upstream since August 2026), so which methodology ran depended on routing rather than intent. The three original skills (`systematic-problem-solving`, `two-stage-review`, `feedback-reception`) had no recorded invocations.
+
+**Decision:** Retire the plugin. Point the README at upstream Superpowers, installed from `obra/superpowers-marketplace`. Bump the manifests to 0.6.0 with a "Retired" description. Leave the skills unchanged in the repo as a record rather than deleting them.
+
+**Consequences:**
+- No further development; the ROADMAP parking lot is closed
+- Existing installs keep working until removed, but receive no updates
+- The `feedback-reception` idea (evaluating stakeholder feedback before acting on it) has no upstream equivalent; if it is wanted again it should come back as a single standalone skill, not a fork
+
+**Alternatives Considered:**
+- *Resync the fork with upstream 7.0.2* — keeps a second copy of a methodology upstream now maintains for this domain, and the drift recurs with every release
+- *Keep only the three original skills as a slimmed plugin* — none were used; not worth a plugin's upkeep
+- *Delete the repo* — loses the record, and links to it would break
+

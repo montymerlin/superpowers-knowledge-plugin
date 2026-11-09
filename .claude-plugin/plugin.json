@@ -1,7 +1,7 @@
 {
   "name": "superpowers-knowledge",
-  "version": "0.5.0",
-  "description": "Structured workflow discipline for creative, business, and strategic knowledge work. A deliberate fork of Jesse Vincent's Superpowers, adapted for non-code contexts and packaged for cross-host use with AGENTS.md as the canonical repo instructions.",
+  "version": "0.6.0",
+  "description": "Retired 2026-11-09: use obra/superpowers instead, which now covers knowledge work. Formerly a fork of Superpowers adapted for creative, business, and strategic work.",
   "author": {
     "name": "Monty Bryant"
   },

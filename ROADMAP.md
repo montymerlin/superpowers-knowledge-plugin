@@ -4,6 +4,8 @@ Ideas, directions, and planned improvements for the Superpowers for Knowledge Wo
 
 Items move to the **Decided** section once evaluated and committed to. Completed items are noted inline.
 
+> **Closed 2026-11-09.** The plugin is retired (Decision 007). Nothing here will be built.
+
 ---
 
 ## Parking Lot
