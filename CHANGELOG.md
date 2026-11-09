@@ -4,6 +4,10 @@ Narrative history of significant changes to the Superpowers MM Plugin. Each entr
 
 ---
 
+## 2026-11-09 — An MIT LICENSE file, keeping upstream's notice
+
+The plugin declared MIT in `plugin.json` and the README but shipped no licence text. As a fork of Jesse Vincent's MIT-licensed Superpowers it also owed upstream's copyright notice, which MIT requires copies and adaptations to keep. Added a `LICENSE` with both notices (Copyright (c) 2025 Jesse Vincent; Copyright (c) 2026 Monty Bryant) and pointed the README at it, so the retired skills stay safely reusable as a record.
+
 ## 2026-11-09 — v0.6.0: Retired in favour of upstream Superpowers
 
 The plugin is retired. Upstream [Superpowers](https://github.com/obra/superpowers) now covers knowledge work directly (its brainstorming skill applies "in software or out of it"), and has been rebuilt twice since this fork was taken from v5.0.7 in April. The README now says so and points to upstream; the manifests are bumped to 0.6.0 with a "Retired" description so an auto-updating install surfaces the change. The skills are left as they were, as a record. See Decision 007.

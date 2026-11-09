@@ -38,6 +38,7 @@ superpowers-knowledge-plugin/
 ├── DECISIONS.md
 ├── ROADMAP.md
 ├── README.md
+├── LICENSE                # MIT (upstream notice kept)
 ├── UPSTREAM.md
 └── .gitignore
 ```

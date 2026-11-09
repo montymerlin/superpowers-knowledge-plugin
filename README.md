@@ -37,4 +37,4 @@ Ten markdown skills: `using-superpowers`, `brainstorming`, `writing-plans`, `exe
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE). Adapted from [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent, whose copyright notice the licence keeps.
